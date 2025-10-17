@@ -1,0 +1,20 @@
+# Ignore Terraform and environment files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate*
+*.zip
+
+# Python environments
+venv/
+__pycache__/
+*.pyc
+
+# Logs and temporary files
+*.log
+.DS_Store
+.env
+
+# IDE specific
+.vscode/
+.idea/
