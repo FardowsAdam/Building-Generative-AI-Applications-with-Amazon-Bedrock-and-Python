@@ -1,19 +1,35 @@
-# Ignore venv
+# Ignore virtual environments
 venv/
+.env/
 
-# Ignore Terraform
-.terraform/
-*.tfstate
-*.tfstate.backup
-
-# Ignore logs and cache
+# Ignore Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Ignore Terraform state and cache files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+terraform.tfvars
+
+# Ignore AWS credentials or config
+*.pem
+*.key
+*.aws
+
+# Ignore IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ignore zip files and temporary files
+*.zip
 *.log
 
-# Ignore ZIPs
-*.zip
-
-# Ignore system files
-.DS_Store
-
+# Don’t ignore PDF or .py files
+!*.pdf
+!*.py
